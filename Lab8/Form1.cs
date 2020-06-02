@@ -13,6 +13,12 @@ namespace Lab8
 {
     public partial class App : Form
     {
+        string name = "";
+        string nIdentificador = "";
+        string horaAtencion = "";
+
+        List<Restaurant> restaurantes = new List<Restaurant>();
+
         public App()
         {
             InitializeComponent();
@@ -61,7 +67,8 @@ namespace Lab8
             if(var == "Restaurant")
             {
                 PanelRest.Visible = true;
-                Restaurant restaurant = new Restaurant(textName.Text,textnIdentificador.Text,textHoraAtencion.Text,txtBool.Text);
+                Restaurant restaurant1 = new Restaurant(textName.Text,textnIdentificador.Text,textHoraAtencion.Text,txtBool.Text);
+                restaurantes.Add(restaurant1);
             }
 
         }
@@ -81,6 +88,23 @@ namespace Lab8
         }
 
         private void RevisarInf_Click(object sender, EventArgs e) //Tengo que mostrar toda la informacion de todas las clases.
+        {
+            Richbox.Visible = true;
+            name = textName.Text.ToString();
+            nIdentificador = textnIdentificador.Text.ToString();
+            horaAtencion = textHoraAtencion.Text.ToString();
+            int contador1 = 0;
+            foreach(Restaurant re in restaurantes)
+            {
+                name = textName.Text.ToString();
+                nIdentificador = textnIdentificador.Text.ToString();
+                horaAtencion = textHoraAtencion.Text.ToString();
+                richTextBox1 = name;
+            }
+            
+        }
+
+        private void App_Load(object sender, EventArgs e)
         {
 
         }

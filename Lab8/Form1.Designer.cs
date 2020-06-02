@@ -32,27 +32,31 @@
             this.RevisarInf = new System.Windows.Forms.Button();
             this.Desplegar = new System.Windows.Forms.Button();
             this.PanelAgregarLocal = new System.Windows.Forms.Panel();
+            this.PanelCategoria = new System.Windows.Forms.Panel();
+            this.btnContinuar2 = new System.Windows.Forms.Button();
+            this.comboCategoria = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textHoraAtencion = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textnIdentificador = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textName = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Button();
-            this.textnIdentificador = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textHoraAtencion = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PanelCategoria = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboCategoria = new System.Windows.Forms.ComboBox();
-            this.btnContinuar2 = new System.Windows.Forms.Button();
             this.PanelRest = new System.Windows.Forms.Panel();
-            this.txtBool = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.Volver = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtBool = new System.Windows.Forms.TextBox();
+            this.Richbox = new System.Windows.Forms.Panel();
+            this.btnVolver2 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.PanelAgregarLocal.SuspendLayout();
             this.PanelCategoria.SuspendLayout();
             this.PanelRest.SuspendLayout();
+            this.Richbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // AgregarL
@@ -95,12 +99,118 @@
             this.PanelAgregarLocal.Controls.Add(this.label1);
             this.PanelAgregarLocal.Controls.Add(this.textName);
             this.PanelAgregarLocal.Controls.Add(this.Nombre);
-            this.PanelAgregarLocal.Location = new System.Drawing.Point(454, 12);
+            this.PanelAgregarLocal.Location = new System.Drawing.Point(12, 12);
             this.PanelAgregarLocal.Name = "PanelAgregarLocal";
-            this.PanelAgregarLocal.Size = new System.Drawing.Size(805, 453);
+            this.PanelAgregarLocal.Size = new System.Drawing.Size(691, 545);
             this.PanelAgregarLocal.TabIndex = 3;
             this.PanelAgregarLocal.Visible = false;
             this.PanelAgregarLocal.Paint += new System.Windows.Forms.PaintEventHandler(this.AgregarLocal_Paint);
+            // 
+            // PanelCategoria
+            // 
+            this.PanelCategoria.Controls.Add(this.btnContinuar2);
+            this.PanelCategoria.Controls.Add(this.PanelRest);
+            this.PanelCategoria.Controls.Add(this.comboCategoria);
+            this.PanelCategoria.Controls.Add(this.label7);
+            this.PanelCategoria.Controls.Add(this.label6);
+            this.PanelCategoria.Controls.Add(this.label5);
+            this.PanelCategoria.Location = new System.Drawing.Point(3, 3);
+            this.PanelCategoria.Name = "PanelCategoria";
+            this.PanelCategoria.Size = new System.Drawing.Size(696, 528);
+            this.PanelCategoria.TabIndex = 8;
+            this.PanelCategoria.Visible = false;
+            // 
+            // btnContinuar2
+            // 
+            this.btnContinuar2.Location = new System.Drawing.Point(319, 191);
+            this.btnContinuar2.Name = "btnContinuar2";
+            this.btnContinuar2.Size = new System.Drawing.Size(113, 54);
+            this.btnContinuar2.TabIndex = 4;
+            this.btnContinuar2.Text = "Continuar";
+            this.btnContinuar2.UseVisualStyleBackColor = true;
+            this.btnContinuar2.Click += new System.EventHandler(this.btnContinuar2_Click);
+            // 
+            // comboCategoria
+            // 
+            this.comboCategoria.FormattingEnabled = true;
+            this.comboCategoria.Items.AddRange(new object[] {
+            "Cine",
+            "Tienda",
+            "Restaurant",
+            "Recreacional"});
+            this.comboCategoria.Location = new System.Drawing.Point(322, 151);
+            this.comboCategoria.Name = "comboCategoria";
+            this.comboCategoria.Size = new System.Drawing.Size(121, 24);
+            this.comboCategoria.TabIndex = 3;
+            this.comboCategoria.Text = "Categorias";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(248, 154);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 17);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Elegir";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(250, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(232, 17);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Recuerda que existen 4 categorias.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(235, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(266, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Elegir la categoria que pertenece el local";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(216, 231);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(289, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Por favor ingresar en formato: (15:30-21:30)";
+            // 
+            // textHoraAtencion
+            // 
+            this.textHoraAtencion.Location = new System.Drawing.Point(322, 181);
+            this.textHoraAtencion.Name = "textHoraAtencion";
+            this.textHoraAtencion.Size = new System.Drawing.Size(214, 22);
+            this.textHoraAtencion.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(164, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Hora de atencion. ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(164, 130);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 17);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Numero identificador";
+            // 
+            // textnIdentificador
+            // 
+            this.textnIdentificador.Location = new System.Drawing.Point(322, 130);
+            this.textnIdentificador.Name = "textnIdentificador";
+            this.textnIdentificador.Size = new System.Drawing.Size(214, 22);
+            this.textnIdentificador.TabIndex = 3;
             // 
             // label1
             // 
@@ -130,137 +240,16 @@
             this.Nombre.UseVisualStyleBackColor = true;
             this.Nombre.Click += new System.EventHandler(this.Nombre_Click);
             // 
-            // textnIdentificador
-            // 
-            this.textnIdentificador.Location = new System.Drawing.Point(322, 130);
-            this.textnIdentificador.Name = "textnIdentificador";
-            this.textnIdentificador.Size = new System.Drawing.Size(214, 22);
-            this.textnIdentificador.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(164, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Numero identificador";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(164, 181);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Hora de atencion. ";
-            // 
-            // textHoraAtencion
-            // 
-            this.textHoraAtencion.Location = new System.Drawing.Point(322, 181);
-            this.textHoraAtencion.Name = "textHoraAtencion";
-            this.textHoraAtencion.Size = new System.Drawing.Size(214, 22);
-            this.textHoraAtencion.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(216, 231);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(289, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Por favor ingresar en formato: (15:30-21:30)";
-            // 
-            // PanelCategoria
-            // 
-            this.PanelCategoria.Controls.Add(this.btnContinuar2);
-            this.PanelCategoria.Controls.Add(this.comboCategoria);
-            this.PanelCategoria.Controls.Add(this.label7);
-            this.PanelCategoria.Controls.Add(this.label6);
-            this.PanelCategoria.Controls.Add(this.label5);
-            this.PanelCategoria.Location = new System.Drawing.Point(730, 30);
-            this.PanelCategoria.Name = "PanelCategoria";
-            this.PanelCategoria.Size = new System.Drawing.Size(577, 375);
-            this.PanelCategoria.TabIndex = 8;
-            this.PanelCategoria.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(235, 54);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(266, 17);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Elegir la categoria que pertenece el local";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(250, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(232, 17);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Recuerda que existen 4 categorias.";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(248, 154);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 17);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Elegir";
-            // 
-            // comboCategoria
-            // 
-            this.comboCategoria.FormattingEnabled = true;
-            this.comboCategoria.Items.AddRange(new object[] {
-            "Cine",
-            "Tienda",
-            "Restaurant",
-            "Recreacional"});
-            this.comboCategoria.Location = new System.Drawing.Point(322, 151);
-            this.comboCategoria.Name = "comboCategoria";
-            this.comboCategoria.Size = new System.Drawing.Size(121, 24);
-            this.comboCategoria.TabIndex = 3;
-            this.comboCategoria.Text = "Categorias";
-            // 
-            // btnContinuar2
-            // 
-            this.btnContinuar2.Location = new System.Drawing.Point(315, 212);
-            this.btnContinuar2.Name = "btnContinuar2";
-            this.btnContinuar2.Size = new System.Drawing.Size(113, 54);
-            this.btnContinuar2.TabIndex = 4;
-            this.btnContinuar2.Text = "Continuar";
-            this.btnContinuar2.UseVisualStyleBackColor = true;
-            this.btnContinuar2.Click += new System.EventHandler(this.btnContinuar2_Click);
-            // 
             // PanelRest
             // 
             this.PanelRest.Controls.Add(this.Volver);
             this.PanelRest.Controls.Add(this.label8);
             this.PanelRest.Controls.Add(this.txtBool);
-            this.PanelRest.Location = new System.Drawing.Point(808, 0);
+            this.PanelRest.Location = new System.Drawing.Point(59, 19);
             this.PanelRest.Name = "PanelRest";
-            this.PanelRest.Size = new System.Drawing.Size(798, 452);
+            this.PanelRest.Size = new System.Drawing.Size(578, 474);
             this.PanelRest.TabIndex = 5;
             this.PanelRest.Visible = false;
-            // 
-            // txtBool
-            // 
-            this.txtBool.Location = new System.Drawing.Point(276, 150);
-            this.txtBool.Name = "txtBool";
-            this.txtBool.Size = new System.Drawing.Size(206, 22);
-            this.txtBool.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(273, 113);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(226, 17);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Diga SI/NO si tiene mesa exclusiva";
             // 
             // Volver
             // 
@@ -272,24 +261,69 @@
             this.Volver.UseVisualStyleBackColor = true;
             this.Volver.Click += new System.EventHandler(this.Volver_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(273, 113);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(226, 17);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Diga SI/NO si tiene mesa exclusiva";
+            // 
+            // txtBool
+            // 
+            this.txtBool.Location = new System.Drawing.Point(276, 150);
+            this.txtBool.Name = "txtBool";
+            this.txtBool.Size = new System.Drawing.Size(206, 22);
+            this.txtBool.TabIndex = 0;
+            // 
+            // Richbox
+            // 
+            this.Richbox.Controls.Add(this.btnVolver2);
+            this.Richbox.Controls.Add(this.richTextBox1);
+            this.Richbox.Location = new System.Drawing.Point(12, 12);
+            this.Richbox.Name = "Richbox";
+            this.Richbox.Size = new System.Drawing.Size(688, 520);
+            this.Richbox.TabIndex = 6;
+            this.Richbox.Visible = false;
+            // 
+            // btnVolver2
+            // 
+            this.btnVolver2.Location = new System.Drawing.Point(275, 304);
+            this.btnVolver2.Name = "btnVolver2";
+            this.btnVolver2.Size = new System.Drawing.Size(122, 57);
+            this.btnVolver2.TabIndex = 1;
+            this.btnVolver2.Text = "button1";
+            this.btnVolver2.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(120, 37);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(442, 229);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1243, 516);
-            this.Controls.Add(this.PanelRest);
+            this.ClientSize = new System.Drawing.Size(1193, 749);
+            this.Controls.Add(this.Richbox);
             this.Controls.Add(this.PanelAgregarLocal);
             this.Controls.Add(this.Desplegar);
             this.Controls.Add(this.RevisarInf);
             this.Controls.Add(this.AgregarL);
             this.Name = "App";
             this.Text = "App";
+            this.Load += new System.EventHandler(this.App_Load);
             this.PanelAgregarLocal.ResumeLayout(false);
             this.PanelAgregarLocal.PerformLayout();
             this.PanelCategoria.ResumeLayout(false);
             this.PanelCategoria.PerformLayout();
             this.PanelRest.ResumeLayout(false);
             this.PanelRest.PerformLayout();
+            this.Richbox.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -318,6 +352,9 @@
         private System.Windows.Forms.Button Volver;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBool;
+        private System.Windows.Forms.Panel Richbox;
+        private System.Windows.Forms.Button btnVolver2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
